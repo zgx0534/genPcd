@@ -20,6 +20,6 @@ for fn in range(len(TRAIN_FILES)):
     os.mkdir(PCD_DIR_DETAIL_PATH)
     fileNum = current_data.shape[0]
     for index in range(fileNum):
-        PCD_FILE_PATH = os.path.join(PCD_DIR_PATH, str(fn) + '_' + str(index) + '.pcd')
+        PCD_FILE_PATH = os.path.join(PCD_DIR_DETAIL_PATH, str(fn) + '_' + str(index) + '.pcd')
         points2pcd(current_data[index], PCD_FILE_PATH)
         index = index + 1
